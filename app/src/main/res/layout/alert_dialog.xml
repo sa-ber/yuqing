@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical">
+
+<LinearLayout 
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_alignParentBottom="true">
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:orientation="vertical">
+           <Button
+               android:id="@+id/btn_wechat_session"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@mipmap/wechat_session"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center_horizontal"
+               android:text="@string/share_wechat_session"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:orientation="vertical">
+
+           <Button
+               android:id="@+id/btn_wechat_timeline"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@mipmap/wehcat_timeline" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center_horizontal"
+               android:text="@string/share_wechat_timeline"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:orientation="vertical">
+           <Button
+               android:id="@+id/btn_other"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@mipmap/more"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center_horizontal"
+               android:text="@string/share_other"/>
+       </LinearLayout>
+   </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"/>
+    <Button
+       android:id="@+id/btn_cancel"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/share_cancel"
+       android:background="@android:color/transparent"
+        />
+</LinearLayout>
+</RelativeLayout>
